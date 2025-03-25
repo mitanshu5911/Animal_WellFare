@@ -8,12 +8,12 @@ const Header = () => {
   return (
     <header className="bg-green-100 text-green-900 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        {/* Logo / Title */}
+        
         <div className="text-2xl font-bold">Animal Welfare</div>
 
-        {/* Desktop Navigation */}
+    
         <nav className="hidden md:flex space-x-6">
-          <Link to="/home" className="hover:text-green-600 font-medium">Home</Link>
+          <Link to="/" className="hover:text-green-600 font-medium">Home</Link>
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
@@ -38,12 +38,11 @@ const Header = () => {
               </div>
             )}
           </div>
-          <Link to="/animals" className="hover:text-green-600 font-medium">Animals</Link>
-          <Link to="/about-us" className="hover:text-green-600 font-medium">About Us</Link>
-          <Link to="/contact-us" className="hover:text-green-600 font-medium">Contact Us</Link>
+          <Link to="/animal" className="hover:text-green-600 font-medium">Animals</Link>
+          <Link to="/about" className="hover:text-green-600 font-medium">About Us</Link>
+          <Link to="/contact" className="hover:text-green-600 font-medium">Contact Us</Link>
         </nav>
 
-        {/* Login & Signup Buttons */}
         <div className="hidden md:flex space-x-4">
           <Link to="/login">
             <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
@@ -57,7 +56,7 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+
         <div className="md:hidden flex items-center">
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-green-900 focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -67,10 +66,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-green-50 p-4">
-          <Link to="/home" className="block py-2 hover:text-green-600">Home</Link>
+          <Link to="/" className="block py-2 hover:text-green-600">Home</Link>
           <button
             onClick={() => setDropdownOpen(!dropdownOpen)}
             className="flex justify-between items-center w-full py-2 hover:text-green-600"
@@ -87,9 +85,9 @@ const Header = () => {
               <Link to="/resources" className="block py-2 hover:bg-green-200">Resources</Link>
             </div>
           )}
-          <Link to="/animals" className="block py-2 hover:text-green-600">Animals</Link>
-          <Link to="/about-us" className="block py-2 hover:text-green-600">About Us</Link>
-          <Link to="/contact-us" className="block py-2 hover:text-green-600">Contact Us</Link>
+          <Link to="/animal" className="block py-2 hover:text-green-600">Animals</Link>
+          <Link to="/about" className="block py-2 hover:text-green-600">About Us</Link>
+          <Link to="/contact" className="block py-2 hover:text-green-600">Contact Us</Link>
           <div className="flex space-x-4 mt-4">
             <Link to="/login">
               <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded w-full">

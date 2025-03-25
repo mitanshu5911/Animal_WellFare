@@ -4,9 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-green-900 text-gray-200 py-8">
       <div className="container mx-auto px-4">
-        {/* Upper Section: Links and Social Media */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          {/* Logo and Quick Links */}
           <div className="mb-6 md:mb-0">
             <h2 className="text-xl font-bold text-white">Animal Welfare</h2>
             <nav className="mt-2">
@@ -27,7 +25,6 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Social Media Icons */}
           <div className="flex space-x-4">
             <a href="#" className="hover:text-green-400 transition">
               <Facebook size={24} />
@@ -44,7 +41,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Developer Section */}
         <div className="mt-8 text-center">
           <h3 className="text-lg font-semibold text-white">Developed By</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
@@ -60,8 +56,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        {/* Copyright Section */}
         <div className="text-center text-gray-400 mt-6">
           <p>&copy; {new Date().getFullYear()} Animal Welfare. All rights reserved.</p>
         </div>

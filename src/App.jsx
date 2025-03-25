@@ -1,20 +1,33 @@
-import React from 'react'
+import React from 'react';
 import Header from './components/Header/Header';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Home from './components/Header/Home';
-import Footer from './components/Header/Footer';
-
+import Home from './components/Home';
+import Footer from './components/Footer/Footer';
+import AnimalPage from './components/Animal/Animal';
+import ContactUs from './components/contact/ContactUs';
+import AboutUs from './components/Aboutus/AboutUs';
+import SignupPage from './components/Signup/Signup';
+import LoginPage from './components/Login/Login';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Home />
-    <Footer/>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/animal" element={<AnimalPage />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/signup" element={<SignupPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        {/* Add more routes as needed */}
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;
