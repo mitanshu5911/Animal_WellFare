@@ -31,10 +31,13 @@ const Header = () => {
               </svg>
             </button>
             {dropdownOpen && (
-              <div className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg z-10">
-                <Link to="/adopt-a-pet" className="block px-4 py-2 hover:bg-gray-200">Adopt a Pet</Link>
-                <Link to="/injured-animal" className="block px-4 py-2 hover:bg-gray-200">Injured Animal</Link>
-                <Link to="/resources" className="block px-4 py-2 hover:bg-gray-200">Resources</Link>
+              <div className="absolute right-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg z-10 pl-3">
+                <Link to="/adopt-a-pet" className="block py-2 hover:bg-green-200">Adopt a Pet</Link>
+              <Link to="/injured-animal" className="block py-2 hover:bg-green-200">Injured Animal</Link>
+              <Link to="/donations" className="block py-2 hover:bg-green-200">Donations</Link>
+              <Link to="/volunteering" className="block py-2 hover:bg-green-200">volunteering</Link>
+              <Link to="/abusing" className="block py-2 hover:bg-green-200">Animal Abuse</Link>
+                
               </div>
             )}
           </div>
@@ -82,7 +85,11 @@ const Header = () => {
             <div className="pl-4">
               <Link to="/adopt-a-pet" className="block py-2 hover:bg-green-200">Adopt a Pet</Link>
               <Link to="/injured-animal" className="block py-2 hover:bg-green-200">Injured Animal</Link>
-              <Link to="/resources" className="block py-2 hover:bg-green-200">Resources</Link>
+              <Link to="/donations" className="block py-2 hover:bg-green-200">Donations</Link>
+              <Link to="/volunteering" className="block py-2 hover:bg-green-200">volunteering</Link>
+              <Link to="/abusing" className="block py-2 hover:bg-green-200">Animal Abuse</Link>
+                
+
             </div>
           )}
           <Link to="/animal" className="block py-2 hover:text-green-600">Animals</Link>

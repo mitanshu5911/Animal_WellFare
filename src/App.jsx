@@ -11,6 +11,7 @@ import AboutUs from './components/Aboutus/AboutUs';
 import SignupPage from './components/Signup/Signup';
 import LoginPage from './components/Login/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import RescueAnimalForm from './components/Injuried/Injuried';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/injured-animal" element={<RescueAnimalForm />} />
+
         {/* Add more routes as needed */}
       </Routes>
       <Footer />
